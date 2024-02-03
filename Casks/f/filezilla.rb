@@ -19,7 +19,7 @@ cask "filezilla" do
       icon_path = "#{Caskroom.path}/filezilla/#{version}/FileZilla.icns"
       app_path = "/Applications/FileZilla.app"
       system_command "mkdir", args: ["-p", File.dirname(icon_path)]
-      system_command "curl", args: ["-s", "-o", icon_path, "https://raw.githubusercontent.com/leejongyoung/homebrew-cask/custom/FileZilla.icns"]
+      system_command "curl", args: ["-s", "-o", icon_path, "https://raw.githubusercontent.com/leejongyoung/homebrew-filezilla/main/FileZilla.icns"]
       system_command "xattr", args: ["-d", "com.apple.quarantine", app_path]
       system_command "cp", args: [icon_path, "#{app_path}/Contents/Resources/FileZilla.icns"]
       system_command "touch", args: [app_path]
