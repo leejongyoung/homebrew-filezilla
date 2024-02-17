@@ -1,11 +1,11 @@
 cask "filezilla" do
-    version "3.66.5"
+    version "3.66.4"
   
     if Hardware::CPU.intel?
-      sha256 "867331bcab7cd35750390e1df10e41d4032065b57dbbfa83fad2c63eb1c5c21f"
+      sha256 "95ac7c083ef59d9b451164b97603acd8a23060c825e928fccf59d81684f2994f"
       url "https://download.filezilla-project.org/client/FileZilla_#{version}_macos-x86.app.tar.bz2"
     else
-      sha256 "061436db2cc1054522a7092e5b3251f81aceec5cde59d5cf326d281c489da24b"
+      sha256 "f050b503ab367a95f4a9575acd966b5164d869be5ad31888e063f7a7d0b875e2"
       url "https://download.filezilla-project.org/client/FileZilla_#{version}_macos-arm64.app.tar.bz2"
     end
   
